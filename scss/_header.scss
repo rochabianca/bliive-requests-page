@@ -13,7 +13,20 @@
 
 .header__search {
   margin-left: 15px;
+  display: inline;
+  position: relative;
+  input {
+    max-width: 321px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcaca;
+    border-radius: 5px;
+  }
+
   .header__search--icon {
+    position: absolute;
+    right: -10px;
+    top: 10px;
   }
 }
 
@@ -21,4 +34,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  .header__list--item {
+    color: $black;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .header__list--profile {
+    width: 40px;
+    border-radius: 50%;
+  }
 }

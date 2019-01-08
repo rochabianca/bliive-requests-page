@@ -1,4 +1,9 @@
+@import '_variables';
 @import '_mixins';
 @import '_reset';
 @import '_header';
 @import '_flex';
+
+body {
+  font-family: 'MaaxRounded';
+}
