@@ -3,7 +3,13 @@
 @import '_reset';
 @import '_header';
 @import '_flex';
+@import '_text';
+@import '_request';
 
 body {
   font-family: 'MaaxRounded';
+}
+
+.container {
+  padding: 50px 130px;
 }

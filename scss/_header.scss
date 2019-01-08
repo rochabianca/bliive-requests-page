@@ -1,9 +1,6 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 15px;
-  border-bottom: 1px solid #cfcaca;
+  border-bottom: 1px solid $gray;
 }
 
 .header__logo {
@@ -19,7 +16,7 @@
     max-width: 321px;
     width: 100%;
     padding: 10px;
-    border: 1px solid #cfcaca;
+    border: 1px solid $gray;
     border-radius: 5px;
   }
 
