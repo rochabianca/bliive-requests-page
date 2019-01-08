@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 30px;
+  margin: 0 15px;
+  font-size: 14px;
+  color: $black;
+}
+
+.footer__text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer__copyright {
+  border-top: 1px solid $gray;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}

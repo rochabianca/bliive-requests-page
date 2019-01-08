@@ -1,15 +1,23 @@
 @import '_variables';
 @import '_mixins';
 @import '_reset';
+@import '_naked.min'; // personalized grid - It's just a normal grid, but lighter than the bootstrap one
 @import '_header';
 @import '_flex';
 @import '_text';
 @import '_request';
+@import '_footer';
 
 body {
   font-family: 'MaaxRounded';
 }
 
-.container {
-  padding: 50px 130px;
+a {
+  text-decoration: none;
+  color: $black;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    color: #069a92;
+  }
 }
