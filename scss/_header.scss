@@ -1,6 +1,10 @@
 .header {
+  background: $white;
   padding: 15px;
   border-bottom: 1px solid $gray;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header__logo {
@@ -12,17 +16,31 @@
   margin-left: 15px;
   display: inline;
   position: relative;
-  input {
+  .header__search {
     width: 321px;
     padding: 10px;
     border: 1px solid $gray;
     border-radius: 5px;
+
+    &.header__search--mobile-inactive {
+      @include d(s) {
+        width: 0px;
+        display: none;
+      }
+    }
   }
 
   .header__search--icon {
     position: absolute;
     right: 10px;
     top: 10px;
+
+    &.header__search--icon--mobile-inactive {
+      @include d(s) {
+        position: initial;
+        width: 20px;
+      }
+    }
   }
 }
 

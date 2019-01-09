@@ -9,19 +9,23 @@
   </head>
   <body>
     <header class="header flex flex__sb-align">
-      <div class="flex flex__sb-align">
+      <div class="mobile__max-width flex flex__sb-align">
         <div class="header__logo"><img src="img/logo.svg" alt="Bliive" /></div>
         <div class="header__search">
-          <input type="text" placeholder="What are you interested in?" />
+          <input
+            class="header__search header__search--mobile-inactive"
+            type="text"
+            placeholder="What are you interested in?"
+          />
           <img
-            class="header__search--icon"
+            class="header__search--icon header__search--icon--mobile-inactive"
             src="img/search.svg"
             alt="search icon"
           />
         </div>
       </div>
 
-      <nav>
+      <nav class="no-mobile">
         <ul class="header__list">
           <li><a href="#" class="header__list--item">Add new experience</a></li>
           <li><a href="#" class="header__list--item">Messages</a></li>
@@ -42,7 +46,7 @@
       <p class="text__subtitle">You can help someone and earn more BLIIVES:</p>
 
       <div class="requests">
-        <a href="#">
+        <a href="#" class="mobile__inline-max-width">
           <div class="request">
             <div class="request__image">
               <div class="request__classification">
@@ -61,7 +65,7 @@
           </div>
         </a>
 
-        <a href="#">
+        <a href="#" class="mobile__inline-max-width">
           <div class="request">
             <div class="request__image">
               <div class="request__classification">
@@ -80,7 +84,7 @@
           </div>
         </a>
 
-        <a href="#">
+        <a href="#" class="mobile__inline-max-width">
           <div class="request">
             <div class="request__image">
               <div class="request__classification">
@@ -99,7 +103,7 @@
           </div>
         </a>
 
-        <a href="#">
+        <a href="#" class="mobile__inline-max-width">
           <div class="request">
             <div class="request__image">
               <div class="request__classification">

@@ -7,6 +7,7 @@
 @import '_text';
 @import '_request';
 @import '_footer';
+@import '_mobile';
 
 body {
   font-family: 'MaaxRounded';
@@ -18,6 +19,6 @@ a {
   transition: 0.3s ease-in;
 
   &:hover {
-    color: #069a92;
+    color: $green;
   }
 }

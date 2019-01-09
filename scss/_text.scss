@@ -2,6 +2,10 @@
   font-size: 36px;
   letter-spacing: -0.2px;
   margin-bottom: 10px;
+
+  @include d(s) {
+    font-size: 24px;
+  }
 }
 
 .text__title__small {
@@ -13,10 +17,18 @@
 .text__subtitle {
   font-size: 18px;
   letter-spacing: -0.2px;
+
+  @include d(s) {
+    font-size: 16px;
+  }
 }
 
 .text__paragraph {
   font-size: 12px;
   display: inline-block;
   max-width: 170px;
+
+  @include d(s) {
+    max-width: 95%;
+  }
 }

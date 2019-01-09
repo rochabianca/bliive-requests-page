@@ -1,0 +1,18 @@
+.no-mobile {
+  @include d(s) {
+    display: none;
+  }
+}
+
+.mobile__max-width {
+  @include d(s) {
+    width: 100%;
+  }
+}
+
+.mobile__inline-max-width {
+  @include d(s) {
+    display: block;
+    width: 100%;
+  }
+}
