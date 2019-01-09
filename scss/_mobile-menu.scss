@@ -9,5 +9,7 @@
   }
 }
 
-.mobile-menu__list {
+.mobile-menu__item {
+  display: flex;
+  flex-direction: column;
 }
