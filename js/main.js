@@ -26,3 +26,7 @@ $(document).on('click', '.mobile-menu__item', function(e) {
   }
   $(this).addClass('active');
 });
+
+$(document).on('click', '.header__search--icon--mobile-inactive', function() {
+  // lembrete: remover classes inativas do mobile e substituir por ativas
+});

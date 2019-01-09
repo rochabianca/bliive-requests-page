@@ -28,6 +28,13 @@
         display: none;
       }
     }
+
+    &.header__search--mobile-active {
+      @include d(s) {
+        width: 190px;
+        display: block;
+      }
+    }
   }
 
   .header__search--icon {
@@ -39,6 +46,13 @@
       @include d(s) {
         position: initial;
         width: 20px;
+      }
+    }
+
+    &.header__search--icon--mobile-active {
+      @include d(s) {
+        position: absolute;
+        width: auto;
       }
     }
   }
