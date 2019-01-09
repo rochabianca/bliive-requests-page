@@ -14,3 +14,15 @@ function duplicateRequests() {
       .append(initialRequests);
   }
 }
+
+// puting a "hover class" when you click on a item of the mobile menu
+$(document).on('click', '.mobile-menu__item', function(e) {
+  e.preventDefault();
+  var mobileMenuItems = $('.mobile-menu__item');
+  for (var i = 0; i < mobileMenuItems.length; i++) {
+    if ($(mobileMenuItems[i]).hasClass('active')) {
+      $(mobileMenuItems[i]).removeClass('active');
+    }
+  }
+  $(this).addClass('active');
+});
