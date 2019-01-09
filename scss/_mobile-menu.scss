@@ -12,4 +12,64 @@
 .mobile-menu__item {
   display: flex;
   flex-direction: column;
+  padding: 5px 10px;
+  color: $black;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    stroke: $black;
+    path {
+      stroke: $black;
+    }
+  }
+
+  .mobile-menu__item--name {
+    display: block;
+    margin: 0 auto;
+    font-size: 10px;
+    padding-top: 5px;
+
+    // because somethimes the icons have different sizes and different white spaces, I have to compensate that manually and that's what I'm doing here.
+    &.exchange {
+      padding-top: 8px;
+    }
+
+    &.add {
+      padding-top: 7px;
+    }
+  }
+  &.active {
+    .mobile-menu__item--name {
+      color: $green;
+    }
+    svg {
+      stroke: $green;
+      path {
+        stroke: $green;
+      }
+    }
+  }
+}
+
+.mobile-menu__profile-image {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.mobile-menu__message {
+  position: relative;
+
+  .new-message {
+    width: 8px;
+    height: 8px;
+    background: orange;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: 5px;
+  }
 }
