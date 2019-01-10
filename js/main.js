@@ -27,6 +27,28 @@ $(document).on('click', '.mobile-menu__item', function(e) {
   $(this).addClass('active');
 });
 
+// show the input when clicking on the search icon on mobile
 $(document).on('click', '.header__search--icon--mobile-inactive', function() {
-  // lembrete: remover classes inativas do mobile e substituir por ativas
+  // since jQuery is not as good to detect mobile devices as the css, I'm checking for a specific
+  // condition that will only appear if the active style is the one for mobile
+  if ($('.header__search__input').css('opacity') == '0') {
+    $('.header__search--mobile-inactive').animate(
+      { width: '190px', display: 'block', opacity: '1' },
+      10
+    );
+    $(this)
+      .removeClass('header__search--icon--mobile-inactive')
+      .addClass('header__search--icon--mobile-active');
+  }
+});
+
+// make the input disappear when clicking on the search icon again
+$(document).on('click', '.header__search--icon--mobile-active', function() {
+  $('.header__search--mobile-inactive').animate(
+    { width: '0px', opacity: '0' },
+    10
+  );
+  $(this)
+    .removeClass('header__search--icon--mobile-active')
+    .addClass('header__search--icon--mobile-inactive');
 });

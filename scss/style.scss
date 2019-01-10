@@ -1,6 +1,6 @@
-@import '_variables';
-@import '_mixins';
-@import '_reset';
+@import '_variables'; // where all the colors and default fonts stay for easy changes
+@import '_mixins'; // some simple functions to ease my life on media queries
+@import '_reset'; // reset the browser default styles
 @import '_naked.min'; // personalized grid - It's just a normal grid, but lighter than the bootstrap one
 @import '_header';
 @import '_flex';

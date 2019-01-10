@@ -1,6 +1,7 @@
 .header {
   background: $white;
   padding: 15px;
+  height: 60px;
   border-bottom: 1px solid $gray;
   position: sticky;
   top: 0;
@@ -16,24 +17,20 @@
   margin-left: 15px;
   display: inline;
   position: relative;
-  .header__search {
+  .header__search__input {
     width: 321px;
     padding: 10px;
     border: 1px solid $gray;
     border-radius: 5px;
+    transition: all 0.3s ease;
 
-    &.header__search--mobile-inactive {
-      @include d(s) {
-        width: 0px;
-        display: none;
-      }
+    @include d(m) {
+      width: 220px;
     }
 
-    &.header__search--mobile-active {
-      @include d(s) {
-        width: 190px;
-        display: block;
-      }
+    @include d(s) {
+      width: 0px;
+      opacity: 0;
     }
   }
 
